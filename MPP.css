@@ -96,7 +96,7 @@ body {
 
 @font-face {
     font-family: "Headfont";
-    src: url(/Fonts/Audiowide-Regular.ttf);
+    src: url(Fonts/Audiowide-Regular.ttf);
 }
 
 .Headbtn {
@@ -141,3 +141,4 @@ body {
     font-size: 40px;
     z-index: 2;
 }
+
