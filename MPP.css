@@ -96,7 +96,7 @@ body {
 
 @font-face {
     font-family: "Headfont";
-    src: url("../Fonts/Audiowide-Regular.ttf") format("truetype");
+  src: url("../Fonts/Audiowide-Regular.ttf") format("truetype");
 }
 
 .Headbtn {
@@ -141,5 +141,19 @@ body {
     font-size: 40px;
     z-index: 2;
 }
-
-
+#babawagen{
+    position: absolute;
+    width: 100px;
+    top: 5vh;
+    right: 1vw;
+    height: auto;
+    z-index: 1;
+    border: #d79a4a 2px solid;
+    border-radius: 190px;
+    background-color: #d79a4a;
+    transition: all 0.3s ease;
+}
+#babawagen:hover{
+    animation-play-state: paused;
+    transform: scale(1.2);
+}
