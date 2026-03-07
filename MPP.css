@@ -1,7 +1,10 @@
 body {
+    width: 100vw;
+    height: 120vh;
     padding: 0px;
     margin: 0px;
-    background-color: rgba(174, 164, 22, 0.779);
+    background: linear-gradient(30deg, rgba(255, 255, 0, 0.59) 40%, rgba(255, 0, 242, 0.419) 70%); 
+    overflow: hidden;
 }
 
 #Kopfleiste {
@@ -16,28 +19,41 @@ body {
     height: 80px;
     transition: height 0.5s ease;
     overflow: hidden;
-        animation: flyingPizzas 5s infinite ;
+    z-index: 10;
 
 
 
 }
-.Pizza{
+
+.Pizza {
     position: absolute;
     width: 50px;
-    height:auto;
-        animation: flyingPizzas 15s infinite ;
+    height: auto;
+    animation: flyingPizzas 15s  infinite linear;
+    z-index: -1;
 
 }
-@keyframes flyingPizzas{
-     from {
-    /* transform: translateX(0vw); */
-    rotate: 10deg;
-  }
-  to {
-    transform: translatex(100vw);
-    rotate: 50deg;
-  }
+
+.Pizza img {
+    width: 50px;
+    height: auto;
+    z-index: -1;
+    opacity: 0.2;
 }
+
+@keyframes flyingPizzas {
+    0% {
+        transform: translateY(0vh) translateX(0vw) rotateZ(0deg) ;
+
+    }
+    
+
+    100% {
+        transform: translateY(109vh) translateX(27.3vw) rotateZ(360deg)    ;
+
+    }
+}
+
 #Kopfleiste:hover {
     height: 150px;
     padding: auto;
@@ -55,8 +71,8 @@ body {
     transition: color 0.5s ease, background-color 0.5s ease, border 0.5s ease;
     cursor: pointer;
     padding: 4px;
-    text-decoration:underline;
-    
+    text-decoration: underline;
+
 }
 
 #Discord:hover {
@@ -86,6 +102,7 @@ body {
 .Headbtn {
     position: relative;
     display: inline-block;
+    z-index: 3;
 }
 
 .Headbtn:hover .hidden-img {
@@ -96,18 +113,31 @@ body {
 
 .hidden-img {
     position: absolute;
-    top: 00%;          
+    top: 0%;
     left: 0%;
-    width: 100%;      
-    z-index: -1;        
+    width: 100%;
+
+    z-index: -1;
+   
     opacity: 0;
     transition: all 0.3s ease;
     box-shadow: 0px 10px 0px black inset;
-   
+
 }
 
 .button-container span {
     position: relative;
-    z-index: 2;        
-    
+    z-index: 2;
+  
+}
+.Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Headfont";
+    color: rgb(63, 147, 151);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    z-index: 2;
 }
