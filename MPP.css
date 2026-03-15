@@ -195,6 +195,7 @@ h1 {
 
 }
 
+
 h2 {
     padding-top: 0px;
     font-family: "Subhead";
@@ -225,4 +226,49 @@ li {
     color: #e1ff00f3;
     font-size: 28px;
     text-shadow: 0.1px 2px 1px rgb(0, 0, 0);
+}
+@media (max-width: 600px) {
+
+body{
+    overflow-y: auto;
+}
+
+#Kopfleiste{
+    flex-direction: column;
+    height: auto;
+}
+
+#Discord{
+    margin: 5px;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+.main{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.Textbox{
+    width: 85vw;
+    margin: 10px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+li{
+    font-size: 16px;
+}
+
+#babawagen{
+    margin: 10px auto;
+}
+
 }
